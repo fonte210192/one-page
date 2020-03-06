@@ -1,0 +1,306 @@
+/* ESTILOS GENERALES */
+html, body{
+    height: 100%;
+}
+/* MODIFICAR MODELO DE CAJA CSS */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* RESETAR MARGENES Y PADDING */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'lato', sans-serif;
+    font-size: 1.09rem;
+}
+h2{
+	font-size: 1.85rem;	
+	font-family: "roboto", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+p{
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+.divider {
+	border-bottom: 2px solid #ff0000;
+	width: 115px;
+	margin: 30px auto;
+}
+	
+.container{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* NAVEGACION */
+#navegation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#main-nav{
+	display: flex;
+	list-style: none;
+	margin: auto;
+	font-family: 'roboto', sans-serif;
+}
+#main-nav li {
+	padding: 12px 0.85rem;
+}
+#main-nav li a{
+	text-decoration: none;
+	color: #0f0f0f;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	padding-bottom: 12px;
+}
+#main-nav li a:hover{
+	border-bottom: 2px solid #ff0000;
+}
+#main-nav + a {
+	color: #0f0f0f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	border: 1px solid #ff0000;
+	padding: 12px 3em;
+	transition: all 0.5s;
+}
+#main-nav + a:hover{
+	background-color: #ff0000;	
+	color: #ffff;
+	transition: all 0.5s;
+}
+nav {
+	padding: 12px 0;
+	border-bottom: 1px solid #cccc;
+	position: fixed;
+	width: 100%;
+	background-color: #ffff;
+}
+/* SECCION 1 */
+article > section:nth-child(1) {
+	background-image: linear-gradient( rgba(41, 24, 21, 0.9),rgba(41, 24, 21, 0.19)), url(../images/buffet-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#seccion1{
+height: 100%;
+min-height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+#seccion1 h1 {
+	color:#ffff00;
+	font-size: 3.85rem;
+	text-align: center;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-shadow: 5px 3px 0 #000;
+}
+
+/* SECCION 2 */
+article > section:nth-last-child(2){
+	margin: 60px 0;
+}
+#seccion2 {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#seccion2 div {
+	flex-basis: 65%;
+	padding-left: 1.85em;
+}
+#seccion2 img {
+	flex-basis: 35%;
+	max-width: 35%;
+	
+}
+/* SECCION 3*/
+article > section:nth-child(3) {
+	background-image: linear-gradient( rgba(41, 24, 21, 0.9),rgba(41, 24, 21, 0.19)), url(../images/food-table.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#seccion3{
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 2rem;
+height: 360px;
+align-items: center;
+color: #ffff;
+}
+/* SECCION 4 */
+article > section:nth-child(4){
+	 margin: 60px 0;
+}
+#seccion4 {
+	display: flex;
+	margin-top: 60px;
+}
+#seccion4 img {
+	width: 100%;
+}
+#seccion4 div {
+	margin: 0 0.5em;
+	box-shadow: -2px 2px 2px #cccc, 2px 4px 1px #cccc;
+	padding-bottom: 15px;
+}
+#seccion4 h3 {
+	text-align: center;
+	padding: 12px 0;
+	font-weight: 500;
+}
+
+/* SECCION 5 */
+article > section:nth-child(5){
+	margin: 60px 0;	
+	text-align: center;	
+	background-color: #fcfcfc;
+	padding: 60px 0;
+}
+#seccion5{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 65px;
+}
+.col ul {
+	border: 1px solid #cccc;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #ffff;
+}
+.col ul li {
+	padding: 20px 0;
+	border-bottom: 1px solid #dddd;
+}
+.col {
+	width: 33%;
+	margin: 0 0.5em;
+	transition: all 0.5s;
+}
+
+.package-header {
+	font-size: 1.5rem;
+}
+.price {
+	background-color: #ececec;
+	font-size: 1.30rem;
+}
+.col ul li i {
+	color: #008000;
+}
+.col:hover {
+	box-shadow: 8px -5px 15px #dad8d8;
+	transition: all 0.5s;
+}
+
+/* SECCION 6 */
+article > section:nth-child(6){
+	margin: 60px 0 0;
+	
+}
+#addressbox {
+	text-align: center;
+}
+#addressbox p{
+	margin-bottom: 12px;
+}
+#formulario {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin: 60px 0 12px;
+}
+.col-input {
+	width: 33%;
+	padding: 0 0.5em;
+}
+.col-input input {
+	width: 100%;
+	height: 45px;
+	margin: 15px 0;
+	border: 1px solid #cccc;
+}
+#comentario {
+	width: 100%;
+	border: 1px solid #cccc;
+	margin: 15px 0;
+}
+label {
+	font-size: 1.13rem;
+	margin: 12px 0;
+}
+.col-input input:focus {
+	border: 1px solid #3f3d3d;
+	box-shadow: 0 0 8px #3f3d3d;
+	transition: all 1s;
+}
+#comentario:focus{
+	border: 1px solid #3f3d3d;
+	box-shadow: 0 0 8px #3f3d3d;
+	transition: all 1s;
+}
+input[type="submit"] {
+	background-color: #008000;
+	color: #ffff;
+	display: inline-block;
+	width: 215px;
+	height: 45px;
+	font-size: 1rem;
+	margin: 12px 0.5rem 25px;
+	border-radius: 8px;
+	border: none;
+}
+input[type="submit"]:hover{
+	background-color: #48a848;
+}
+#col-input {
+	padding: 0 0.5rem;
+}
+/* PIE DE PAGINA */
+footer{
+
+	background-color: #121018;
+	padding: 30px 0 0;
+}
+#piepagina {
+	display: flex;
+	justify-content: center;
+}
+#piepagina a i {
+	color: #ffff;
+	font-size: 2rem;
+	margin-left: 12px;
+}
+#copy {
+	text-align: center;
+	color: #ffff;
+	font-size: 1rem;
+	padding: 12px 0;
+	border-top: 1px solid #423d3d;
+	margin: 12px 0 0;
+}
+main{
+	padding-top: 80px;
+}
